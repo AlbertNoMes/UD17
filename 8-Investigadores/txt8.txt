@@ -1,0 +1,41 @@
+use Investigadores
+
+db.createCollection('Facultad')
+
+db.Facultad.insertOne(
+  {
+    _id: 1,
+    Codigo: 1,
+    Nombre: 'Medicina'
+  })
+
+db.createCollection('Investigadores')
+
+db.Investigadores.insertOne(
+  {
+    _id: 1,
+    DNI: '22222225X',
+    NomApels: 'Albert_Notario',
+    Facultad: 1
+  })
+
+db.createCollection('Reserva')
+
+db.Reserva.insertOne(
+  {
+    _id: 1,
+    DNI: '22222225X',
+    NumSerie: 1,
+    Comienzo: 02-02-2022,
+    Fin: 06-02-2022
+  })
+
+db.createCollection('Equipos')
+
+db.Equipos.insertOne(
+  {
+    _id: 1,
+    NumSerie: 2,
+    Nombre: 'Equipo1',
+    Facultad: 1
+  })

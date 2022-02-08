@@ -1,0 +1,24 @@
+use Almacenes
+
+db.createCollection('Almacenes')
+
+db.Almacenes.insertOne(
+  {
+    _id: 1,
+    Codigo: 1,
+    Lugar: 'Cambrils',
+    Capacidad: 100
+  }
+  )
+
+db.createCollection('Cajas')
+
+db.Cajas.insertOne(
+  {
+    _id: 1,
+    NumReferencia: 1,
+    Contenido: 'Mouse',
+    Valor: 100,
+    Almacen: 1
+  }
+  )

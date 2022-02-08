@@ -1,0 +1,54 @@
+use Empleados
+
+db.createCollection('Empleados')
+
+db.Empleados.insertMany(
+  [
+    {
+      _id: 1,
+      DNI: '39922558E',
+      Nombre: 'Empleado1',
+      Apellidos: 'ApellidoE1',
+      Departamento: 1
+    },
+    {
+      _id: 2,
+      DNI: '39922668H',
+      Nombre: 'Empleado2',
+      Apellidos: 'ApellidoE2',
+      Departamento: 1
+    },
+    {
+      _id: 3,
+      DNI: '22266889L',
+      Nombre: 'Empleado3',
+      Apellidos: 'ApellidoE3',
+      Departamento: 2,
+    }
+  ]
+)
+
+db.createCollection('Departamentos')
+
+db.Departamentos.insertMany(
+  [
+    {
+      _id: 1,
+      Codigo: 1,
+      Nombre: 'Departamento1',
+      Presupuesto: 100
+    },
+    {
+      _id: 2,
+      Codigo: 2,
+      Nombre: 'Departamento2',
+      Presupuesto: 100
+    },
+    {
+      _id: 3,
+      Codigo: 3,
+      Nombre: 'Departamento3',
+      Presupuesto: 200,
+    }
+  ]
+)

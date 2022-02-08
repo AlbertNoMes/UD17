@@ -1,0 +1,28 @@
+use Cientificos
+
+db.createCollection('Cientificos')
+
+db.Cientificos.insertOne(
+  {
+    _id: 1,
+    DNI: '22222222D',
+    NomApels: 'Albert_Notario'
+  })
+
+db.createCollection('Asignado_a')
+
+db.Asignado_a.insertOne(
+  {
+    _id: 1,
+    Cientifico: 1,
+    Proyecto: 1
+  })
+
+db.createCollection('Proyecto')
+
+db.Proyecto.insertOne(
+  {
+    _id: 1,
+    Nombre: 'Albert_Notario',
+    Horas: 30
+  })

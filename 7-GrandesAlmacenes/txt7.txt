@@ -1,0 +1,39 @@
+use Grandes_Almacenes
+
+db.createCollection('Cajeros')
+
+db.Cajeros.insertOne(
+  {
+    _id: 1,
+    Codigo: 1,
+    NomApels: 'Albert_Notario'
+  })
+
+db.createCollection('Productos')
+
+db.Productos.insertOne(
+  {
+    _id: 1,
+    Codigo: 1,
+    Nombre: 'Mouse',
+    Precio: 55
+  })
+
+db.createCollection('Venta')
+
+db.Venta.insertOne(
+  {
+    _id: 1,
+    Cajero: 1,
+    Maquina: 1,
+    Producto: 1
+  })
+
+db.createCollection('Maquinas_Registradoras')
+
+db.Maquinas_Registradoras.insertOne(
+  {
+    _id: 1,
+    Codigo: 1,
+    Piso: 1
+  })

@@ -1,0 +1,19 @@
+[{
+  "_id": 1,
+  "Codigo": 1,
+  "Nombre": "Articulo1",
+  "Precio": "PrecioArticulo1",
+  "Fabricante": "Fabricante1"
+},{
+  "_id": 2,
+  "Codigo": 2,
+  "Nombre": "Articulo2",
+  "Precio": "PrecioArticulo2",
+  "Fabricante": "Fabricante1"
+},{
+  "_id": 3,
+  "Codigo": 3,
+  "Nombre": "Articulo3",
+  "Precio": "PrecioArticulo3",
+  "Fabricante": "Fabricante1"
+}]

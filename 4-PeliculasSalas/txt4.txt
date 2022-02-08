@@ -1,0 +1,21 @@
+use Peliculas_y_Salas
+
+db.createCollection('Salas')
+
+db.Salas.insertOne(
+  {
+    _id: 1,
+    Codigo: 1,
+    Nombre: 'Nombre1',
+    Pelicula: 'Peli1'
+  })
+
+db.createCollection('Peliculas')
+
+db.Peliculas.insertOne(
+  {
+    _id: 1,
+    Codigo: 1,
+    Nombre: 'Nombre1',
+    CalificacionEdad: 2
+  })
